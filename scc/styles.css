@@ -12,7 +12,7 @@
   /* background colors */
   --main-bg: #ffffff;
   --secondary-bg: #f5f4fa;
-  --hero-bg: #2f303a;
+  --hero-bg: #2F303A;
 }
 
 body {
@@ -152,13 +152,35 @@ img {
 }
 
 .link.phone,
-.link.mail {
-  color: var(--main-txt-cl);
+.link.mail,{
+  color:var(--main-txt-cl);
 }
 
-.contacts {
-  margin-left: auto;
+.link.mail {
+  margin-right: 30px;
 }
+
+
+.contacts {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  /* margin-top: 0;
+  margin-bottom: 0; */
+}
+
+.adress-icon:hover,
+.adress-icon:focus {fill: var(--accent-cl);}
+
+
+
+.adress-icon {
+  margin-right: 10px;
+  fill:var(--main-txt-cl);
+} 
+
+
 
 /* ======================================
 hero
@@ -166,8 +188,12 @@ hero
 
 .hero {
   background-color: var(--hero-bg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+   url(../images/bg-img.png);
+  background-size: cover;
+  
   text-align: center;
-  /* width: 1600px; */
+  max-width: 1600px;
  
   height: 600px;
   margin-left: auto;
@@ -175,6 +201,8 @@ hero
 
   padding-top: 200px;
   padding-bottom: 200px;
+
+
 }
 
 .hero-title {
@@ -220,6 +248,18 @@ hero
 /*===========================================
  benefits section 
  ============================================*/
+
+ .ben-thumb {
+   width: 270px;
+   height: 120px;
+   background-color: 
+#F5F4FA;
+margin-bottom: 30px;
+display: flex;
+justify-content: center;
+align-items: center;
+ 
+ }
 
 .list.list-benefits {
   margin-right: 30px;
@@ -336,6 +376,22 @@ section team
   padding-bottom: 30px;
 }
 
+.socials.list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.socials.link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  width: 44px;
+  height: 44px;
+  background-color: red;
+  border-radius: 50%;
+} 
 /*========================================
  footer 
  =========================================*/
