@@ -347,7 +347,7 @@ section team
   border-radius: 0px 0px 4px 4px;
 }
 
-.team-link:not(:last-child) {
+.team-link:not(li:last-of-type) {
   margin-right: 30px;
 }
 
@@ -423,7 +423,7 @@ clients
 
 .clients {
   /* height: 708px; */
-  max-width: 1600px;
+  /* max-width: 1600px; */
   background-color: #ffffff;
   padding-top: 94px;
   padding-bottom: 94px;
