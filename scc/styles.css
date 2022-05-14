@@ -12,7 +12,7 @@
   /* background colors */
   --main-bg: #ffffff;
   --secondary-bg: #f5f4fa;
-  --hero-bg: #2F303A;
+  --hero-bg: #2f303a;
 }
 
 body {
@@ -152,14 +152,13 @@ img {
 }
 
 .link.phone,
-.link.mail,{
-  color:var(--main-txt-cl);
+.link.mail {
+  color: var(--main-txt-cl);
 }
 
 .link.mail {
   margin-right: 30px;
 }
-
 
 .contacts {
   display: flex;
@@ -171,16 +170,14 @@ img {
 }
 
 .adress-icon:hover,
-.adress-icon:focus {fill: var(--accent-cl);}
-
-
+.adress-icon:focus {
+  fill: var(--accent-cl);
+}
 
 .adress-icon {
   margin-right: 10px;
-  fill:var(--main-txt-cl);
-} 
-
-
+  fill: var(--main-txt-cl);
+}
 
 /* ======================================
 hero
@@ -188,21 +185,23 @@ hero
 
 .hero {
   background-color: var(--hero-bg);
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-   url(../images/bg-img.png);
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/bg-img.png);
   background-size: cover;
-  
+
   text-align: center;
   max-width: 1600px;
- 
+
   height: 600px;
   margin-left: auto;
   margin-right: auto;
 
   padding-top: 200px;
   padding-bottom: 200px;
-
-
 }
 
 .hero-title {
@@ -249,17 +248,15 @@ hero
  benefits section 
  ============================================*/
 
- .ben-thumb {
-   width: 270px;
-   height: 120px;
-   background-color: 
-#F5F4FA;
-margin-bottom: 30px;
-display: flex;
-justify-content: center;
-align-items: center;
- 
- }
+.ben-thumb {
+  width: 270px;
+  height: 120px;
+  background-color: #f5f4fa;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .list.list-benefits {
   margin-right: 30px;
@@ -329,11 +326,29 @@ section team
   background-color: var(--secondary-bg);
 }
 
-.team.link {
-  margin-right: 30px;
+.team.list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
 }
-.team.link:last-child {
-  margin-right: 0;
+
+.team-link {
+  /* display: inline-block; */
+  /* margin-right: 30px; */
+  background: #ffffff;
+  width: 270px;
+  height: 428px;
+  /* padding-bottom: 30px; */
+  flex-basis: calc(100%-160px) / 4;
+
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.team-link:not(:last-child) {
+  margin-right: 30px;
 }
 
 .team.title {
@@ -345,11 +360,6 @@ section team
   color: var(--secondary-txt-cl);
 
   margin-bottom: 50px;
-}
-
-.team.list {
-  display: flex;
-  justify-content: center;
 }
 
 .team-member.title {
@@ -369,29 +379,103 @@ section team
   line-height: 1.19;
   /* identical to box height */
   text-align: center;
-  /* margin-bottom: 30px; */
 }
 .team-description {
   padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 16px;
 }
 
 .socials.list {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 10px;
 }
 
-.socials.link {
+.socials-item {
   display: flex;
   justify-content: center;
   align-items: center;
-  
+
   width: 44px;
   height: 44px;
-  background-color: red;
+  background-color: #ffffff;
   border-radius: 50%;
-} 
+}
+
+.socials-item:hover,
+.socials-item:focus {
+  background-color: var(--accent-cl);
+}
+
+.social-icon {
+  fill: #afb1b8;
+}
+
+.social-icon:hover,
+.sosial-icon:focus {
+  fill: var(--white);
+}
+
+/* =======================================
+clients
+========================================== */
+
+.clients {
+  /* height: 708px; */
+  max-width: 1600px;
+  background-color: #ffffff;
+  padding-top: 94px;
+  padding-bottom: 94px;
+  padding-left: 215px;
+  padding-right: 215px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.client-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--secondary-txt-cl);
+
+  margin-bottom: 50px;
+}
+
+.clients-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.clients-thumb {
+  width: 170px;
+  height: 92;
+  background-color: var(--white);
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* .client-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+.icon-logo {
+  fill: #afb1b8;
+}
+.icon-logo:hover,
+.icon-logo:focus {
+  fill: var(--accent-cl);
+}
+
 /*========================================
  footer 
  =========================================*/
@@ -400,6 +484,8 @@ section team
   background-color: #2f303a;
   padding-top: 60px;
   padding-bottom: 60px;
+  /* padding-left: 215px; */
+  /* padding-right: 878px; */
 }
 
 .footer-container {
@@ -408,6 +494,12 @@ section team
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
+
+  display: flex;
+  align-items: baseline;
+}
+.info {
+  margin-right: 70px;
 }
 
 .footer .logo {
@@ -435,14 +527,11 @@ section team
   line-height: 1.71;
 }
 
-
-.footer .link.phone, {
+.footer .link.phone {
   color: rgba(255, 255, 255, 0.6);
   display: inline-block;
   line-height: 1.71;
 }
-
-
 
 .footer .link.phone:hover,
 .footer .link.phone:focus {
@@ -452,6 +541,38 @@ section team
 .footer .link.mail:hover,
 .footer .link.mail:focus {
   color: var(--accent-cl);
+}
+
+.join-title {
+  /* font-family: var(--main-font);
+  font-style: normal; */
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.socials-item-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 44px;
+  height: 44px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+}
+
+.social-icon-footer {
+  fill: #ffffff;
+}
+
+.socials-item-footer:hover,
+.socials-item-footer:focus {
+  background-color: var(--accent-cl);
 }
 
 /*===========================================
@@ -514,6 +635,17 @@ portfolio
 }
 .projects.item:nth-last-child(-n + 3) {
   margin-bottom: 0;
+}
+
+.projects.item:hover,
+.projects.item:focus {
+
+  box-shadow: 0px 1px 1px 
+  rgba(0, 0, 0, 0.12), 
+  0px 4px 4px 
+  rgba(0, 0, 0, 0.06), 
+  1px 4px 6px 
+  rgba(0, 0, 0, 0.16);
 }
 
 .card-description {
