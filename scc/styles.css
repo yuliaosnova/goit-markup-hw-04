@@ -422,8 +422,8 @@ clients
 ========================================== */
 
 .clients {
-  /* height: 708px; */
-  /* max-width: 1600px; */
+
+  display: inline-block;
   background-color: #ffffff;
   padding-top: 94px;
   padding-bottom: 94px;
@@ -462,11 +462,6 @@ clients
   justify-content: center;
   align-items: center;
 }
-/* .client-item {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-} */
 
 .icon-logo {
   fill: #afb1b8;
