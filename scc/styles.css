@@ -104,12 +104,13 @@ img {
   color: var(--accent-cl);
   text-decoration: none;
   display: inline-block;
-}
-.logo-black {
-  color: #212121;
   margin-top: 24px;
   margin-bottom: 25px;
   margin-right: 93px;
+}
+.logo-black {
+  color: #212121;
+  
 }
 
 .link.navigation-link.current {
@@ -141,25 +142,41 @@ img {
   color: var(--accent-cl);
 }
 
-.link.mail:hover,
-.link.mail:focus {
-  color: var(--accent-cl);
-}
-
-.link.phone:hover,
-.link.phone:focus {
-  color: var(--accent-cl);
-}
-
 .link.phone,
 .link.mail {
   color: var(--main-txt-cl);
+  /* padding-top: 32px;
+  padding-bottom: 32px; */
 }
 
 .link.mail {
   margin-right: 30px;
 }
 
+
+.link.mail:hover {color: var(--accent-cl);}
+.link.mail:hover +.mail-icon {fill:var(--accent-cl);}
+
+.link.mail:focus {color: var(--accent-cl);}
+.link.mail:focus +.mail-icon {fill:var(--accent-cl);}
+
+.mail-group {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: baseline;
+}
+
+.link.phone:hover {color: var(--accent-cl);}
+.link.phone:hover +.phone-icon {fill:var(--accent-cl);}
+
+.link.phone:focus {color: var(--accent-cl);}
+.link.phone:focus +.phone-icon {fill:var(--accent-cl);}
+
+.phone-group {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: baseline;
+}
 .contacts {
   display: flex;
   justify-content: center;
@@ -169,12 +186,12 @@ img {
   margin-bottom: 0; */
 }
 
-.adress-icon:hover,
+/* .adress-icon:hover,
 .adress-icon:focus {
   fill: var(--accent-cl);
-}
+} */
 
-.adress-icon {
+.mail-icon, .phone-icon {
   margin-right: 10px;
   fill: var(--main-txt-cl);
 }
@@ -345,6 +362,9 @@ section team
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+
+  /* margin-left: auto;
+  margin-right: auto; */
 }
 
 .team-link:not(li:last-of-type) {
@@ -389,8 +409,10 @@ section team
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 10px;
+  
 }
+
+.socials-link:not(:last-child){margin-right: 10px;}
 
 .socials-item {
   display: flex;
@@ -412,10 +434,8 @@ section team
   fill: #afb1b8;
 }
 
-.social-icon:hover,
-.sosial-icon:focus {
-  fill: var(--white);
-}
+.socials-item:hover .social-icon,
+.socials-item:focus .socials-item {fill: #ffffff;}
 
 /* =======================================
 clients
@@ -423,17 +443,17 @@ clients
 
 .clients {
 
-  display: inline-block;
   background-color: #ffffff;
   padding-top: 94px;
   padding-bottom: 94px;
   padding-left: 215px;
   padding-right: 215px;
-  margin-left: auto;
-  margin-right: auto;
+  /* margin-left: auto;
+  margin-right: auto; */
 }
 
 .client-title {
+ 
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -442,18 +462,23 @@ clients
   color: var(--secondary-txt-cl);
 
   margin-bottom: 50px;
+
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .clients-list {
   display: flex;
   justify-content: center;
   align-items: center;
+  list-style: none;
+  margin: 0px;
   gap: 30px;
 }
 
-.clients-thumb {
-  width: 170px;
-  height: 92;
+.client-link {
+  /* width: 170px;
+  height: 92px; */
   background-color: var(--white);
   border: 1px solid #afb1b8;
   border-radius: 4px;
