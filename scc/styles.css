@@ -410,10 +410,10 @@ section team
   align-items: center;
 }
 
-/* .socials-item:not(:last-child){margin-right: 10px;} */
+
 
 .socials.link {
-  display: flex;
+  
   width: 44px;
   height: 44px;
   background-color: #ffffff;
@@ -427,17 +427,6 @@ color:#ffffff;}
 
 .social-icon {fill: currentColor;}
 
-/* .socials-item:hover,
-.socials-item:focus {
-  background-color: var(--accent-cl);
-}
-
-.social-icon {
-  fill: #afb1b8;
-}
-
-.socials-item:hover .social-icon,
-.socials-item:focus .socials-icon {fill: #ffffff;} */
 
 /* =======================================
 clients
