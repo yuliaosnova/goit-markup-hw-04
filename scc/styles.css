@@ -413,7 +413,7 @@ section team
 
 
 .socials.link {
-  
+  display: flex;
   width: 44px;
   height: 44px;
   background-color: #ffffff;
