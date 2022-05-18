@@ -473,25 +473,43 @@ clients
 
 /* .clients-list.list:last-child {margin-right: 0px;} */
 
-.client-item {
+.client-link.link {
  
   background-color: var(--white);
   border: 1px solid #afb1b8;
   border-radius: 4px;
   /* margin-right: 30px; */
+  width: 170px;
+  height: 92px;
 } 
 
 
 
 .icon-logo {
   fill: #afb1b8;
+  
 }
 
-.client-link.link:hover,
-.client-link.link:focus {
+.client-link.link {
   
-  fill: var(--accent-cl);
+  display: flex;
+  align-items: center;
+  justify-content: center;}
+
+.client-link.link:hover, 
+.client-link.link:focus {
+  color: var(--accent-cl);
+  border-color: var(--accent-cl);
 }
+
+
+.client-link:hover .icon-logo,
+.client-link:focus .icon-logo {
+  fill: currentColor;
+}
+
+
+
 
 /*========================================
  footer 
@@ -572,7 +590,7 @@ clients
   margin-bottom: 20px;
 }
 
-.socials-item-footer {
+.socials-link-footer {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -581,19 +599,22 @@ clients
   height: 44px;
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
+  color: #ffffff;
 }
 /* .socials-item-footer:not(:last-child){margin-right: 10px;} */
 
 
 .social-icon-footer {
-  fill: #ffffff;
+  fill: currentColor;
 }
 
 
-.socials-item-footer:hover,
-.socials-item-footer:focus {
+.socials-link-footer:hover,
+.socials-link-footer:focus {
+  color: #ffffff;
   background-color: var(--accent-cl);
-}
+} 
+
 
 /*===========================================
 portfolio
