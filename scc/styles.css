@@ -156,11 +156,7 @@ img {
 }
 
 
-.link.mail:hover {color: var(--accent-cl);}
-.link.mail:hover +.mail-icon {fill:var(--accent-cl);}
 
-.link.mail:focus {color: var(--accent-cl);}
-.link.mail:focus +.mail-icon {fill:var(--accent-cl);}
 
 .mail-group {
   display: flex;
@@ -168,24 +164,31 @@ img {
   align-items: baseline;
 }
 
-.link.phone:hover {color: var(--accent-cl);}
-.link.phone:hover +.phone-icon {fill:var(--accent-cl);}
+.link.mail:hover, 
+.link.mail:focus {color: var(--accent-cl);
+outline: none;}
 
-.link.phone:focus {color: var(--accent-cl);}
-.link.phone:focus +.phone-icon {fill:var(--accent-cl);}
+.link.mail:hover +.mail-icon,
+.link.mail:focus+.mail-icon {fill:var(--accent-cl);}
 
 .phone-group {
   display: flex;
   flex-direction: row-reverse;
   align-items: baseline;
 }
+.link.phone:hover,
+.link.phone:focus {color: var(--accent-cl);
+outline: none;
+}
+.link.phone:hover +.phone-icon,
+.link.phone:focus+.phone-icon {fill:var(--accent-cl);}
+
 .contacts {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-left: auto;
 }
-
 
 .mail-icon, .phone-icon {
   margin-right: 10px;
@@ -273,6 +276,7 @@ hero
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 4px;
 }
 
 .list.list-benefits {
